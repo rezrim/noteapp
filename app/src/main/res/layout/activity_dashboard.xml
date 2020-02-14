@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DASHBOARD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <!-- baris 1 -->
+
+        <TableRow
+            android:id="@+id/tableRowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txa"
+                android:padding="5dp"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dashboard_employee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/ic_people"
+                android:background="#FFFFF0"
+                android:gravity="center"
+                android:text="EMPLOYEE"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txb"
+                android:padding="5dp"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dashboard_client"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/ic_business"
+                android:background="#FFFFF0"
+                android:gravity="center"
+                android:text="CLIENT"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txc"
+                android:padding="5dp"
+                android:text=""></TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txa1"
+                android:padding="5dp"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dashboard_task"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/ic_computer"
+                android:background="#FFFFF0"
+                android:gravity="center"
+                android:text="TASK"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txb1"
+                android:padding="5dp"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dashboard_info"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:drawableTop="@drawable/ic_info"
+                android:background="#FFFFF0"
+                android:gravity="center"
+                android:text="INFO"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txc1"
+                android:padding="5dp"
+                android:text=""></TextView>
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>
